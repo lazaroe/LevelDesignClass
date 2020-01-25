@@ -6,6 +6,8 @@ public class PlayerMovementScript : MonoBehaviour
 {
     public CharacterController controller;
     public float speed = 12f;
+    public float RunSpeed = 20f;
+    private float NormalSpeed;
     public float gravity = -9.8f;
     public float jumpHeight = 3f;
 
@@ -15,6 +17,12 @@ public class PlayerMovementScript : MonoBehaviour
 
     private Vector3 velocity;
     private bool isGrounded;
+
+    void Start()
+    {
+        NormalSpeed = speed;
+    }
+    
 
     void Update()
     {
@@ -30,6 +38,16 @@ public class PlayerMovementScript : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = RunSpeed; 
+        }
+        else 
+        {
+            speed = NormalSpeed;
+
+        }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {

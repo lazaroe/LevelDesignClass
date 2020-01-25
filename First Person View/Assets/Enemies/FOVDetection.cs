@@ -21,9 +21,9 @@ public class FOVDetection : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawRay(transform.position, fovLine1);
         Gizmos.DrawRay(transform.position, fovLine2);
-        
-        
-        if(!isInFov)
+
+
+        if (!isInFov)
             Gizmos.color = Color.red;
         else
             Gizmos.color = Color.green;
@@ -31,7 +31,7 @@ public class FOVDetection : MonoBehaviour
 
         Gizmos.color = Color.black;
         Gizmos.DrawRay(transform.position, transform.forward * maxRadius);
-        
+
     }
 
     public static bool inFOV(Transform checkingObject, Transform target, float maxAngle, float maxRadius)
@@ -60,18 +60,33 @@ public class FOVDetection : MonoBehaviour
                             if (hit.transform == target)
                                 return true;
                         }
-                        
+
                     }
 
                 }
             }
         }
+
         return false;
     }
 
     private void Update()
     {
         isInFov = inFOV(transform, player, maxAngle, maxRadius);
+        if (isInFov == true)
+        {
+            Attack();
+        }
     }
-    
+
+    void Attack()
+    {
+        print("attack");
+    }
+
+    void Search()
+    {
+        print("searching");
+    }
+
 }
