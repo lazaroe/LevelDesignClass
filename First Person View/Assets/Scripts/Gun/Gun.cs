@@ -1,23 +1,54 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    [Header("Gun Values")]
     public float damage = 10f;
     public float range = 100f;
     public float fireRate = 15f;
     public float impactForce = 30f;
+
+    [Header("Ammo & Reload")]
+    public int maxAmmo = 30;
+    public int bulletsPerMag = 10;
+    private int currentAmmo;
+    public float reloadTime = 1f;
+    private bool IsReloading = false;
     
+    [Header("Effects")]
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject ImpactEffect;
 
     private float nextTimeToFire = 0f;
 
+    public Animator animator;
+
+    void Start()
+    {
+        currentAmmo = bulletsPerMag;
+    }
+
+    void OnEnable()
+    {
+        IsReloading = false;
+        animator.SetBool("Reloading", false);
+    }
+
     void Update()
     {
+        if (IsReloading)
+            return;
+        if (currentAmmo <= 0)
+        {
+            StartCoroutine(Reload());
+            return;
+        }
+        
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
@@ -25,11 +56,36 @@ public class Gun : MonoBehaviour
         }
     }
 
+    IEnumerator Reload ()
+    {
+        IsReloading = true;
+        Debug.Log("Reloading");
+        animator.SetBool("Reloading", true);
+        yield return new WaitForSeconds(reloadTime - 0.25f);
+        animator.SetBool("Reloading", false);
+        yield return new WaitForSeconds(0.25f);
+        
+        int bulletsToLoad = bulletsPerMag - currentAmmo;
+        int bulletsToDecuct = (maxAmmo >= bulletsToLoad) ? bulletsToLoad : maxAmmo;
+        maxAmmo -= bulletsToDecuct;
+        currentAmmo += bulletsToDecuct;
+        IsReloading = false;
+    }
+
+    void Aim()
+    {
+        if(Input.GetMouseButtonDown(2))
+        {
+        //do stuff here
+        }
+    }
+
 
     void Shoot()
     {
         muzzleFlash.Play();
-        
+
+        currentAmmo--;
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
