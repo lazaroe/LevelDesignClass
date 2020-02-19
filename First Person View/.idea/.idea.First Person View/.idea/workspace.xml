@@ -14,7 +14,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/Patrol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemies/FOVDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovementScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/New_Weapon_Recoil_Script.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/WeaponSwitching.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/Aim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/Gun.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -29,6 +31,8 @@
         <option value="$PROJECT_DIR$/Assets/Enemies/FOVDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovementScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/WeaponSwitching.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gun/New_Weapon_Recoil_Script.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Aim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Gun.cs" />
       </list>
     </option>
@@ -97,6 +101,8 @@
       <workItem from="1579992849280" duration="1463000" />
       <workItem from="1579994770468" duration="410000" />
       <workItem from="1579995193325" duration="4721000" />
+      <workItem from="1580179015934" duration="7785000" />
+      <workItem from="1580189123920" duration="1034000" />
     </task>
     <servers />
   </component>
@@ -125,6 +131,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Gun/New_Weapon_Recoil_Script.cs</url>
+          <line>49</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Gun/New_Weapon_Recoil_Script.cs" initialLine="49">
+            <startOffsets>
+              <option value="1865" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2035" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

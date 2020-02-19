@@ -18,15 +18,18 @@ public class Gun : MonoBehaviour
     private int currentAmmo;
     public float reloadTime = 1f;
     private bool IsReloading = false;
-    
+
     [Header("Effects")]
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject ImpactEffect;
 
     private float nextTimeToFire = 0f;
+    public bool OnAim = false;
 
     public Animator animator;
+    public New_Weapon_Recoil_Script recoil;
+    
 
     void Start()
     {
@@ -41,6 +44,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
+        Aim();
         if (IsReloading)
             return;
         if (currentAmmo <= 0)
@@ -51,6 +55,7 @@ public class Gun : MonoBehaviour
         
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
         {
+            recoil.Fire(); //Recoil
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
         }
@@ -74,9 +79,14 @@ public class Gun : MonoBehaviour
 
     void Aim()
     {
-        if(Input.GetMouseButtonDown(2))
+        if (Input.GetMouseButtonDown(2))
         {
-        //do stuff here
+            if (OnAim == false)
+            {
+                animator.SetBool("Aiming", true);
+                print("Aimin");
+                OnAim = true;
+            }
         }
     }
 
@@ -105,6 +115,11 @@ public class Gun : MonoBehaviour
             GameObject impactGO = Instantiate(ImpactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impactGO, 2f);
         }
+    }
+
+    void BulletHole()
+    {
+       
     }
 
 }
