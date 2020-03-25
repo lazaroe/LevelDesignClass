@@ -11,8 +11,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Enemies/Patrol.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enemies/FOVDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovementScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/New_Weapon_Recoil_Script.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/WeaponSwitching.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,6 +32,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/New_Weapon_Recoil_Script.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Aim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Gun.cs" />
+        <option value="$PROJECT_DIR$/Temp/Compiled-Shader Graphs-SnowShader.shader" />
       </list>
     </option>
   </component>
@@ -103,6 +102,10 @@
       <workItem from="1579995193325" duration="4721000" />
       <workItem from="1580179015934" duration="7785000" />
       <workItem from="1580189123920" duration="1034000" />
+      <workItem from="1583296407242" duration="1000" />
+      <workItem from="1583901516450" duration="2000" />
+      <workItem from="1583942626502" duration="36000" />
+      <workItem from="1584227506434" duration="305000" />
     </task>
     <servers />
   </component>
