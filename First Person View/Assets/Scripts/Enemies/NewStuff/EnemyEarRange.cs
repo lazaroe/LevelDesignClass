@@ -9,6 +9,7 @@ public class EnemyEarRange : MonoBehaviour
     public float hearingDistance;
     private bool playerinRange;
     public GameObject eyeline;
+    public GameObject EnemyScripts;
 
 
     private void OnTriggerEnter(Collider other)
@@ -36,7 +37,10 @@ public class EnemyEarRange : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     Debug.Log("Heard Player");
-                    //Do Something
+                    //
+                    EnemyScripts.GetComponent<AgentWander>().enabled = false;
+                    EnemyScripts.GetComponent<AgentTarget>().enabled = true;
+                    EnemyScripts.GetComponent<Patrol>().enabled = false;
                 }
             }
         }

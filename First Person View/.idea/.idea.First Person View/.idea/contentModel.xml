@@ -286,7 +286,13 @@
         <e p="Scripts" t="Include">
           <e p="Enemies" t="Include">
             <e p="FOVDetection.cs" t="Include" />
-            <e p="Patrol.cs" t="Include" />
+            <e p="NewStuff" t="Include">
+              <e p="AgentTarget.cs" t="Include" />
+              <e p="AgentWander.cs" t="Include" />
+              <e p="EnemyEarRange.cs" t="Include" />
+              <e p="EnemyEyeline.cs" t="Include" />
+              <e p="Patrol.cs" t="Include" />
+            </e>
           </e>
           <e p="Gun" t="Include">
             <e p="Aim.cs" t="Include" />
@@ -298,42 +304,6 @@
           <e p="Movement" t="Include">
             <e p="MouseLook.cs" t="Include" />
             <e p="PlayerMovementScript.cs" t="Include" />
-          </e>
-          <e p="Scripts 1" t="Include">
-            <e p="Doors" t="Include">
-              <e p="Door.cs" t="Include" />
-              <e p="SceneController.cs" t="Include" />
-            </e>
-            <e p="Enemies" t="Include">
-              <e p="AutoTurret" t="Include">
-                <e p="Turret.cs" t="Include" />
-              </e>
-              <e p="BlackHole" t="Include">
-                <e p="BlackHole.cs" t="Include" />
-              </e>
-              <e p="EnemyHealth" t="Include">
-                <e p="EnemyHealth.cs" t="Include" />
-              </e>
-              <e p="EnemyUnits" t="Include">
-                <e p="Mage" t="Include">
-                  <e p="HomingMissle3D.cs" t="Include" />
-                  <e p="MageEnemy.cs" t="Include" />
-                </e>
-                <e p="PatrollingEnemy" t="Include">
-                  <e p="EnemyPatroll.cs" t="Include" />
-                  <e p="TriggerPatroll.cs" t="Include" />
-                </e>
-                <e p="Static Enemy" t="Include">
-                  <e p="Arrow.cs" t="Include" />
-                  <e p="BasicEnemy.cs" t="Include" />
-                  <e p="EnemyAttack.cs" t="Include" />
-                </e>
-              </e>
-              <e p="Kamakazi.cs" t="Include" />
-            </e>
-            <e p="Weapons" t="Include">
-              <e p="Boomerang.cs" t="Include" />
-            </e>
           </e>
         </e>
       </e>
