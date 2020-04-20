@@ -9,7 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Buildd_InsideWindow_BaseColor
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _METALLICGLOSSMAP _METALLICSPECGLOSSMAP _NORMALMAP _PARALLAXMAP
+  m_ShaderKeywords: _DETAIL_MULX2 _METALLICGLOSSMAP _METALLICSPECGLOSSMAP _NORMALMAP
+    _PARALLAXMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -24,11 +25,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 9fdd178eaadc7fd4cb2a66b0ad3fc2c2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4085e1e7f852b6b4198bf7530a2d883b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: ed56692ff98348248b4928d14bc01137, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
@@ -44,11 +45,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8c1f9c4822c95fb46b4332fe2f3a85b9, type: 3}
+        m_Texture: {fileID: 2800000, guid: ed56692ff98348248b4928d14bc01137, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 67eac46da342f7f48a294f6c3c7378a1, type: 3}
+        m_Texture: {fileID: 2800000, guid: a64d0a6644be33a43886b585eca4fec6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -56,7 +57,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: 82b2d5e9011e4de4494e8ef1db9d1651, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0b1fecd84c79b9d4ca079eb01012f064, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
