@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class EnemyEyeline : MonoBehaviour
 {
@@ -8,7 +9,13 @@ public class EnemyEyeline : MonoBehaviour
     private RaycastHit hit;
     public float sightDistance;
     public GameObject eyeline;
+    public GameObject EnemyScripts;
+    public GameObject RangeVisibility;
 
+    void Start()
+    {
+        RangeVisibility.SetActive(false); 
+    }
 
     private void OnTriggerStay(Collider other)
     {
@@ -20,6 +27,10 @@ public class EnemyEyeline : MonoBehaviour
                 {
                     Debug.Log("Player Seen");
                     //Attack Function
+                    EnemyScripts.GetComponent<AgentWander>().enabled = false;
+                    EnemyScripts.GetComponent<Patrol>().enabled = false;
+                    EnemyScripts.GetComponent<BasicEnemy>().enabled = true;
+                    RangeVisibility.SetActive(true); 
                 }
             }
         }

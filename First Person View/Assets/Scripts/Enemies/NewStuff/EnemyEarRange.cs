@@ -37,9 +37,9 @@ public class EnemyEarRange : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     Debug.Log("Heard Player");
-                    //
-                    EnemyScripts.GetComponent<AgentWander>().enabled = false;
-                    EnemyScripts.GetComponent<AgentTarget>().enabled = true;
+                    //In hearing range
+                    EnemyScripts.GetComponent<AgentWander>().enabled = true;
+                    EnemyScripts.GetComponent<AgentTarget>().enabled = false;
                     EnemyScripts.GetComponent<Patrol>().enabled = false;
                 }
             }

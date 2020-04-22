@@ -12,6 +12,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEarRange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/BasicEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovementScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/New_Weapon_Recoil_Script.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/WeaponSwitching.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,8 +39,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Aim.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Gun.cs" />
         <option value="$PROJECT_DIR$/Temp/Compiled-Shader Graphs-SnowShader.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEyeline.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyShot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/AgentTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEarRange.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/BasicEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEyeline.cs" />
       </list>
     </option>
   </component>
@@ -114,6 +121,8 @@
       <workItem from="1584227506434" duration="305000" />
       <workItem from="1585754534450" duration="1727000" />
       <workItem from="1585757247675" duration="1775000" />
+      <workItem from="1587569921316" duration="2943000" />
+      <workItem from="1587573502566" duration="2155000" />
     </task>
     <servers />
   </component>

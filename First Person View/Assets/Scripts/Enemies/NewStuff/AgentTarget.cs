@@ -8,15 +8,15 @@ public class AgentTarget : MonoBehaviour
 {
     public Transform Destination;
     private NavMeshAgent agent;
-	
+
     private void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>(); //For movement
     }
 
     private void Update()
     {
-        agent.destination = Destination.position;
+        agent.destination = Destination.position; //for movement
     }
 }
 

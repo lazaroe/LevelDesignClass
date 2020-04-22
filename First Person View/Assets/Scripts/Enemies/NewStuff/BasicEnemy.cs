@@ -17,18 +17,13 @@ public class BasicEnemy : MonoBehaviour
     public float MaxDistAwayFromPlayer = 10;
     public float MinDist = 1;
     public float speed = 3;
-    public float stuntTime = 2;
-    private float stuntSpeed = 0;
-    
-    
+
+
     private float swordactive = 0.5f;
     
-    [Header("EnemyAttack")] 
-    public GameObject EnemSwordWeapon;
+    [Header("EnemyAttack")]
     public Transform ShootingPoint;
-    public GameObject Arrows;
-    public bool Swordsman;
-    public bool Archer;
+    public GameObject Bullets;
     float startTimer;
     public float TimeBetweenAttacks;
 
@@ -37,14 +32,7 @@ public class BasicEnemy : MonoBehaviour
         nav = GetComponent<NavMeshAgent>();
         nav.speed = speed;
     }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Shield"))
-        {
-            StartCoroutine(Stunt());
-        }
-    }
+    
 
     public void FollowPlayerWhenInRange()
     {
@@ -66,26 +54,12 @@ public class BasicEnemy : MonoBehaviour
             ) //this checks the distance between enemy and player
             {
                 nav.SetDestination(transform.position);
-                
-                //Do Stuff Like Attack
-                if (Swordsman == true)
-                {
-                    startTimer += Time.deltaTime;
+                startTimer += Time.deltaTime;
                     if (startTimer >= TimeBetweenAttacks)
                     {
-                        startTimer = 0f;
-                        StartCoroutine(AttackingSword());
+                        startTimer = 0f; 
+                        StartCoroutine(AttackingArrow());
                     }
-                }
-                if (Archer == true)
-                        {
-                            startTimer += Time.deltaTime;
-                            if (startTimer >= TimeBetweenAttacks)
-                            {
-                                startTimer = 0f;
-                                StartCoroutine(AttackingArrow());
-                            }
-                        }
             }
 
         }
@@ -102,26 +76,13 @@ public class BasicEnemy : MonoBehaviour
         }
     }
 
-    IEnumerator AttackingSword()
-    {
-        EnemSwordWeapon.SetActive(true);
-        yield return new WaitForSeconds(swordactive);
-        EnemSwordWeapon.SetActive(false);
-    }
-
     IEnumerator AttackingArrow()
     {
             yield return new WaitForSeconds(swordactive);
-            Instantiate(Arrows, ShootingPoint.transform.position, Quaternion.identity);
+            Instantiate(Bullets, ShootingPoint.transform.position, Quaternion.identity);
             
     }
 
-    IEnumerator Stunt()
-    {
-        nav.speed = stuntSpeed;
-        yield return new WaitForSeconds(stuntTime);
-        nav.speed = speed;
-    }
     
 
 }

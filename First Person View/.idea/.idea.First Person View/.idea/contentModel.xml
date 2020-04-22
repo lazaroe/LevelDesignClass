@@ -289,8 +289,11 @@
             <e p="NewStuff" t="Include">
               <e p="AgentTarget.cs" t="Include" />
               <e p="AgentWander.cs" t="Include" />
+              <e p="BasicEnemy.cs" t="Include" />
               <e p="EnemyEarRange.cs" t="Include" />
               <e p="EnemyEyeline.cs" t="Include" />
+              <e p="HomingMissle3D.cs" t="Include" />
+              <e p="OnTriggerWIthPLayerEvent.cs" t="Include" />
               <e p="Patrol.cs" t="Include" />
             </e>
           </e>
@@ -305,6 +308,7 @@
             <e p="MouseLook.cs" t="Include" />
             <e p="PlayerMovementScript.cs" t="Include" />
           </e>
+          <e p="PlayerHealth.cs" t="Include" />
         </e>
       </e>
       <e p="First Person View.sln" t="IncludeFlat" />
