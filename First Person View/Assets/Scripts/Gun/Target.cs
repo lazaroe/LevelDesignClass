@@ -5,6 +5,8 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     public float health = 50f;
+    public GameObject Dummy;
+    public Transform target;
     
     public void TakeDamage(float amount)
     {
@@ -12,12 +14,14 @@ public class Target : MonoBehaviour
         if (health <= 0f)
         {
             Die();
+            Dummy.SetActive(true);
         }
     }
 
     void Die()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        Dummy.transform.position = target.transform.position;
     }
     
 }

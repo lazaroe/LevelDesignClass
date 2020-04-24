@@ -11,13 +11,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEarRange.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/BasicEnemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectivePickUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/Target.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovementScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/New_Weapon_Recoil_Script.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/WeaponSwitching.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/Aim.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightSiren.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FireFlickering.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FinishLine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/HomingMissle3D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEarRange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/BasicEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/New_Weapon_Recoil_Script.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEyeline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/AgentWander.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/AgentTarget.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,6 +52,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEarRange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/BasicEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEyeline.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/HomingMissle3D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FinishLine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectivePickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Flash.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FireFlickering.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LightSiren.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DummyDead.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Target.cs" />
       </list>
     </option>
   </component>
@@ -123,6 +138,8 @@
       <workItem from="1585757247675" duration="1775000" />
       <workItem from="1587569921316" duration="2943000" />
       <workItem from="1587573502566" duration="2155000" />
+      <workItem from="1587701921786" duration="4958000" />
+      <workItem from="1587763518388" duration="2520000" />
     </task>
     <servers />
   </component>

@@ -33,22 +33,16 @@ public class HomingMissle3D : MonoBehaviour {
 		rocketRigidbody.velocity = transform.forward * rocketVelocity;
 		Destroy (gameObject, DestroyTime);
 	}
+	
 	void OnCollisionEnter(Collision collision)
-    {
-	    if (collision.gameObject.tag == "Shield")
-	    {
-		    rocketVelocity = -3f;
-		    rocketRigidbody.useGravity = true; //This is for when the missiles hit the shield
-
-	    }
-	    
-	    else
-	    {
-		    
-		    GameObject clone = (GameObject) Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
-		    Destroy(clone, explosionEffectTime);
-		    Destroy(gameObject);
-	    }
+	{
+		if (collision.gameObject.CompareTag("Player"))
+		{
+			HealthBar.health -= 10f;
+		}
+		GameObject clone = (GameObject) Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
+		Destroy(clone, explosionEffectTime);
+		Destroy(gameObject);
     }
 
 	public void LookAtPlayer()

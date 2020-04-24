@@ -284,6 +284,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="DummyDead.cs" t="Include" />
           <e p="Enemies" t="Include">
             <e p="FOVDetection.cs" t="Include" />
             <e p="NewStuff" t="Include">
@@ -297,6 +298,8 @@
               <e p="Patrol.cs" t="Include" />
             </e>
           </e>
+          <e p="FinishLine.cs" t="Include" />
+          <e p="FireFlickering.cs" t="Include" />
           <e p="Gun" t="Include">
             <e p="Aim.cs" t="Include" />
             <e p="Gun.cs" t="Include" />
@@ -304,11 +307,13 @@
             <e p="Target.cs" t="Include" />
             <e p="WeaponSwitching.cs" t="Include" />
           </e>
+          <e p="HealthBar.cs" t="Include" />
+          <e p="LightSiren.cs" t="Include" />
           <e p="Movement" t="Include">
             <e p="MouseLook.cs" t="Include" />
             <e p="PlayerMovementScript.cs" t="Include" />
           </e>
-          <e p="PlayerHealth.cs" t="Include" />
+          <e p="ObjectivePickUp.cs" t="Include" />
         </e>
       </e>
       <e p="First Person View.sln" t="IncludeFlat" />
