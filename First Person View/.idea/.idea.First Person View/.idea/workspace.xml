@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectivePickUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/Target.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/PlayerMovementScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/WeaponSwitching.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/Aim.cs" root0="FORCE_HIGHLIGHTING" />
@@ -28,6 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/AgentWander.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/AgentTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun/Gun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RestartButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -43,7 +45,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/WeaponSwitching.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/New_Weapon_Recoil_Script.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Aim.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Gun.cs" />
         <option value="$PROJECT_DIR$/Temp/Compiled-Shader Graphs-SnowShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/Bullet.cs" />
@@ -53,7 +54,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/BasicEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEyeline.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/HomingMissle3D.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FinishLine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectivePickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flash.cs" />
@@ -61,6 +61,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LightSiren.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DummyDead.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Target.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Gun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RestartButton.cs" />
       </list>
     </option>
   </component>
@@ -140,6 +143,8 @@
       <workItem from="1587573502566" duration="2155000" />
       <workItem from="1587701921786" duration="4958000" />
       <workItem from="1587763518388" duration="2520000" />
+      <workItem from="1587848223188" duration="415000" />
+      <workItem from="1588018309591" duration="1752000" />
     </task>
     <servers />
   </component>

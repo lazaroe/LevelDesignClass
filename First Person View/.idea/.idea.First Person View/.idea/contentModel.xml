@@ -284,7 +284,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="DummyDead.cs" t="Include" />
           <e p="Enemies" t="Include">
             <e p="FOVDetection.cs" t="Include" />
             <e p="NewStuff" t="Include">
@@ -314,6 +313,7 @@
             <e p="PlayerMovementScript.cs" t="Include" />
           </e>
           <e p="ObjectivePickUp.cs" t="Include" />
+          <e p="RestartButton.cs" t="Include" />
         </e>
       </e>
       <e p="First Person View.sln" t="IncludeFlat" />

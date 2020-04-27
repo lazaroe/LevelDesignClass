@@ -19,7 +19,8 @@ public class Gun : MonoBehaviour
     public float reloadTime = 1f;
     private bool IsReloading = false;
 
-    [Header("Effects")]
+    [Header("Effects")] 
+    public GameObject GunShotSound;
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject ImpactEffect;
@@ -44,6 +45,10 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetMouseButton(0))
+            GunShotSound.SetActive(true);
+        else
+            GunShotSound.SetActive(false);
         Aim();
         if (IsReloading)
             return;

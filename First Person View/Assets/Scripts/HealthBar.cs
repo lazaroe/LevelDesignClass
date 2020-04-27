@@ -9,6 +9,7 @@ public class HealthBar : MonoBehaviour
     public Image healthBar;
     public float maxHealth = 100f;
     public static float health;
+    public GameObject LoosingScreen;
 
     void Start()
     {
@@ -19,5 +20,10 @@ public class HealthBar : MonoBehaviour
     private void Update()
     {
         healthBar.fillAmount = health / maxHealth;
+
+        if (health <= 0)
+        {
+            LoosingScreen.SetActive(true);
+        }
     }
 }
