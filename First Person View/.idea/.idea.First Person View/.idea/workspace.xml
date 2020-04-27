@@ -53,7 +53,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEarRange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/BasicEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/EnemyEyeline.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/HomingMissle3D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FinishLine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectivePickUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flash.cs" />
@@ -64,6 +63,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun/Gun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RestartButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/NewStuff/HomingMissle3D.cs" />
       </list>
     </option>
   </component>
@@ -145,6 +145,7 @@
       <workItem from="1587763518388" duration="2520000" />
       <workItem from="1587848223188" duration="415000" />
       <workItem from="1588018309591" duration="1752000" />
+      <workItem from="1588026737564" duration="609000" />
     </task>
     <servers />
   </component>
